@@ -32,7 +32,7 @@ int main() {
 	FILE *fp = fopen(filename, "r");
 	int data[3];
 	word_count(fp, data);
-	printf("lines: %d, words: %d, chars: %d\n", data[0],  data[1], data[2]);
+	printf("%d %d %d %s\n", data[0],  data[1], data[2], filename);
 	fclose(fp);
 	return 0;
 }
